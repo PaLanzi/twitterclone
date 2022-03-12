@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+ul {
+  list-style: none;
+  text-align: left;
+}
+li {
+  margin-bottom: 0.75rem;
+}
+.profile_pic {
+  width: 2%;
+  height: 2%;
+  border-radius: 50%;
+}
+
+.user_name {
+  color: pink;
+}
