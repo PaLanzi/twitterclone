@@ -3,7 +3,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 //import Form from "./Components/Form";
-import Sidebar from "./Components/Sidebar";
+// import Sidebar from "./Components/Sidebar";
 import Post from "./Components/Post";
 import Posts from "./Components/Posts";
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -70,7 +70,11 @@ function App() {
         <div>
             <Searchbar />
           </div>
-          <Post messages={messages} />
+          <Routes>
+            <Route path="/" element={<Posts messages={messages} />} />
+            <Route path="/message/:id" element={<Post messages={messages} />} />
+          </Routes>
+          
       </header>
       
     </div>
